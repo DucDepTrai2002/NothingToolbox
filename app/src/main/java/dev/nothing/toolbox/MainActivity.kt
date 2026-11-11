@@ -26,6 +26,7 @@ class MainActivity : ComponentActivity() {
 
 private data class ToolboxFeature(val title: String, val description: String, val icon: ImageVector)
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun NothingToolboxApp() {
     val features = listOf(
